@@ -15,13 +15,13 @@ import {
 
 const HorizontalCard = ({ title, description, imageUrl, url, icons }) => {
   return (
-    <div className="flex flex-col justify-center items-center md:flex-row bg-neutral-800 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+    <div className="flex flex-col p-2 md:p-4 gap-8 justify-center items-center md:flex-row bg-neutral-900 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
       <img
-        className="h-56 w-96 object-cover p-2"
+        className="rounded-lg w-full md:w-1/2"
         src={imageUrl}
         alt={title}
       />
-      <div className="flex flex-col m-4 justify-center text-center md:text-left">
+      <div className="flex flex-col justify-center text-center md:text-left">
         <h2 className="text-2xl font-bold text-white">{title}</h2>
         <p className="py-2 text-lg text-gray-300">{description}</p>
         {/* Sección de íconos */}
