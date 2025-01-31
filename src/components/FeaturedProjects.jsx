@@ -3,13 +3,33 @@ import HorizontalCard from "./HorizontalCard";
 
 const FeaturedProjects = () => {
   return (
-    <div className="pb-8">
-      <div className="text-3xl text-center sm:text-3xl md:text-3xl lg:text-4xl font-bold text-gray-200 pb-4">
+    <div className="">
+      <div className="font-permanent-marker text-3xl text-center sm:text-3xl md:text-3xl lg:text-4xl font-bold text-gray-200 pb-4">
         Mis trabajos destacados:
       </div>
-      <div className="grid gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         <HorizontalCard
-          title="Hablemos de Belgrano (en desarrollo)"
+          title="AcademiaA Córdoba"
+          description=" Diseñe un sistema para está academia, donde necesitaban una pagina web con un campus virtual para sus alumnos. La plataforma cuenta con un sistema de autenticación y manejo de archivos."
+          imageUrl="https://res.cloudinary.com/diadzh30o/image/upload/v1736577819/Portfolio/qottxkncdagl0vasnjgg.png"
+          url="https://academia-a-eight.vercel.app/"
+          icons={{
+            react: true,
+            django: false,
+            redux: true,
+            docker: false,
+            tailwind: true,
+            html: false,
+            css: false,
+            github: true,
+            javascript: true,
+            python: false,
+            nestjs: true,
+            typescript: true,
+          }}
+        />
+        <HorizontalCard
+          title="Hablemos de Belgrano"
           description="Creé una web donde el equipo puede gestionar y publicar notas deportivas sobre el Club Belgrano. La plataforma es intuitiva y responsive para ofrecer una experiencia óptima en cualquier dispositivo."
           imageUrl="https://res.cloudinary.com/diadzh30o/image/upload/v1727963296/Portfolio/l4jzjxakgxgkqnjo4o7y.png"
           url="https://github.com/LucasPeshu/HablemosDeBelgrano"
@@ -24,6 +44,8 @@ const FeaturedProjects = () => {
             github: true,
             javascript: true,
             python: false,
+            nestjs: false,
+            typescript: false,
           }}
         />
         <HorizontalCard
@@ -42,6 +64,8 @@ const FeaturedProjects = () => {
             github: true,
             javascript: true,
             python: false,
+            nestjs: false,
+            typescript: false,
           }}
         />
       </div>
